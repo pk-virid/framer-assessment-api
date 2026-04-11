@@ -1,0 +1,9 @@
+{
+  "name": "framer-assessment-api",
+  "version": "1.0.0",
+  "description": "Assessment API for Framer templates",
+  "main": "api/assess.js",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0"
+  }
+}
