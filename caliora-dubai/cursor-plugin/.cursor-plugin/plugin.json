@@ -1,0 +1,10 @@
+{
+  "name": "framer-dha-dentist",
+  "version": "1.0.0",
+  "description": "DHA-compliant Dubai dentist template guardrails for Framer External Agent builds.",
+  "author": {
+    "name": "Caliora Dubai"
+  },
+  "license": "MIT",
+  "keywords": ["framer", "dha", "dentist", "dubai", "template"]
+}

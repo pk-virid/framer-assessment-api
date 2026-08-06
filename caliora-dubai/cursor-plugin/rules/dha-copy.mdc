@@ -1,0 +1,18 @@
+---
+description: Enforce DHA-safe dental marketing copy when editing Framer dentist templates for Dubai.
+alwaysApply: false
+globs:
+  - caliora-dubai/**
+  - "**/*dentist*"
+  - "**/*dental*"
+---
+
+# DHA copy rule
+
+When writing or revising dental marketing copy for Dubai/UAE Framer templates:
+
+- No guaranteed clinical outcomes or superiority claims
+- Include MOHAP advertisement licence and DHA facility licence placeholder slots in footers
+- Use consultation / assessment CTAs
+- Case and testimonial UI must surface consent + outcomes-vary notes
+- Prefer verifiable, buyer-editable stats over invented KPIs
