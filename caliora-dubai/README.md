@@ -44,6 +44,10 @@ npx @framer/agent@latest session new "<projectUrlOrId>"
 - DHA-safe marketing language (see `DHA-COMPLIANCE.md`)
 - Dubai-localised locations, contact patterns, insurance/payment notes, Arabic-ready structure notes
 
+## Studio cadence
+
+This is **week 1** of a one-template-per-week line. Pipeline + backlog: [`../template-studio/`](../template-studio/).
+
 ## Files
 
 - `DHA-COMPLIANCE.md` — advertising rules baked into every section
