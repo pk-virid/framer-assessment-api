@@ -37,19 +37,22 @@ For large design recreation, use Framer’s design subagent (see skill `start-co
 ```js
 state.agent ??= {};
 const first = await framer.agent.startConversation(
-  `Build an AED 15,000-tier Framer-native dental clinic template inspired by https://caliora-dentist-template.webflow.io/ for Dubai dentists.
+  `Build an AED 15,000-tier Framer-native Dubai dental clinic OS.
+
+IA (primary nav): Home, About, Treatments, Conditions, Symptoms, Membership, Offers, Contact Us.
+Content model reference: https://sensatedentalos.framer.website/ — CMS graph Treatments↔Conditions↔Symptoms↔Articles↔Clinicians↔Membership↔Offers. Secondary: Articles, Clinicians, Learn hubs, Privacy, Terms, Instructions, Style Guide.
 
 QUALITY BAR: Private-clinic luxury. Quiet, expensive motion — not a free template.
 MOTION (mandatory): hero brand→masked headline→support→CTA choreography; scroll reveals with 60–90ms stagger; image scale-settle + subtle parallax; nav scroll-compact + underline draw; button hover arrow nudge; page transitions; FAQ accordion height; honor prefers-reduced-motion. Easing cubic-bezier(0.16,1,0.3,1). No purple glow, no bounce spam, no fake counters.
 
-STRICT DHA COPY: No guaranteed outcomes, no best-in-Dubai claims, no fake case counts. MOHAP/DHA licence slots in footer. Dubai locations (Jumeirah + Business Bay placeholders).
+STRICT DHA COPY: No guaranteed outcomes, no best-in-Dubai claims, no fake case counts, no diagnostic symptom checker claims. Medical review strip on clinical pages. MOHAP/DHA licence slots in footer. Dubai locations.
 
 LAYOUT: Home first viewport = one composition — brand-forward, full-bleed hero, one headline, one support, one CTA group. No hero cards/stats/badges.
-Then shared Nav/Footer components with polish.`,
+Then shared Nav/Footer with the 8 primary links.`,
   {
     pagePath: "/",
     imageUrls: [
-      /* optional screenshots of Caliora sections */
+      /* optional screenshots */
     ],
   },
 );

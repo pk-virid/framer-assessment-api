@@ -2,7 +2,7 @@
 
 | Week | Template | Reference | Price | Compliance | Status |
 |------|----------|-----------|-------|------------|--------|
-| W1 | Caliora Dubai Dentist | https://caliora-dentist-template.webflow.io/ | AED 15,000 | DHA / MOHAP | In progress — awaiting Framer auth |
+| W1 | Caliora Dubai Dentist OS | Sensate Dental OS + Caliora craft (https://sensatedentalos.framer.website/) | AED 15,000 | DHA / MOHAP | IA locked — awaiting Framer auth |
 | W2 | TBD | | | | Queued |
 | W3 | TBD | | | | Queued |
 | W4 | TBD | | | | Queued |

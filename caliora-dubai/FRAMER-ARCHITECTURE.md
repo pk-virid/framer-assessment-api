@@ -26,28 +26,42 @@ Spacing scale: 8 / 16 / 24 / 40 / 64 / 96 / 128 / 160 — section padding deskto
 
 ## Pages
 
+Canonical IA: [`SITE-IA.md`](./SITE-IA.md) (aligned to [Sensate Dental OS](https://sensatedentalos.framer.website/) + your primary nav).
+
+### Primary nav
 | Path | Purpose |
 |------|---------|
 | `/` | Home composition |
-| `/about` | Clinic story + team |
+| `/about` | Clinic story + approach |
 | `/treatments` | CMS list |
-| `/treatment/:slug` | CMS detail |
+| `/treatments/:slug` | Treatment detail |
 | `/conditions` | CMS list |
-| `/condition/:slug` | CMS detail |
-| `/cases` | Case studies (with consent + outcomes disclaimer) |
-| `/case/:slug` | Case detail |
-| `/blog` | Blog list |
-| `/blog/:slug` | Blog detail |
-| `/gallery` | Facility / non-GA imagery |
-| `/equipment` | Technology |
-| `/locations` | Dubai locations list |
-| `/location/:slug` | Location detail |
-| `/contact` | Form + FAQ |
-| `/privacy` | Privacy |
-| `/terms` | Terms |
-| `/instructions` | Buyer setup + DHA checklist |
-| `/style-guide` | Tokens, type, components |
+| `/conditions/:slug` | Condition detail |
+| `/symptoms` | CMS A–Z list |
+| `/symptoms/:slug` | Symptom detail |
+| `/membership` | Plans + compare CTA |
+| `/membership/:slug` | Optional plan detail |
+| `/offers` | CMS promotions |
+| `/offers/:slug` | Offer detail + terms |
+| `/contact` | Contact Us form + FAQ + locations |
+
+### Authority + marketplace (secondary / footer)
+| Path | Purpose |
+|------|---------|
+| `/articles` | Patient education list |
+| `/articles/:slug` | Article detail (author + medical reviewer) |
+| `/clinicians` | Named DHA-licensed profiles |
+| `/clinicians/:slug` | Clinician detail |
+| `/learn` | Topic hubs |
+| `/learn/:slug` | Hub detail |
+| `/privacy` · `/terms` | Legal |
+| `/instructions` | Buyer + DHA setup |
+| `/style-guide` | Design system |
+| `/search` | Optional site search |
 | `/404` | Not found |
+
+### Optional funnels
+`/funnel/new-patient`, `/funnel/smile-makeover`, `/symptoms/check`
 
 ## Shared layout components
 
@@ -83,24 +97,21 @@ See `PREMIUM-MOTION.md`. Minimum ship set:
 
 ## CMS collections
 
-### Treatments
-Fields: `title`, `slug`, `category` (ref Conditions), `summary`, `heroImage`, `body` (rich text), `process` (rich text), `limitations` (rich text), `faq` (JSON/rich), `order`
+Full field lists: [`SITE-IA.md`](./SITE-IA.md).
 
-### Conditions
-Fields: `title`, `slug`, `summary`, `heroImage`, `body`, `relatedTreatments` (multi-ref)
+| Collection | Route | Notes |
+|------------|-------|-------|
+| Treatments | `/treatments/:slug` | + related conditions/symptoms/articles |
+| Conditions | `/conditions/:slug` | + when-to-seek-care |
+| Symptoms | `/symptoms/:slug` | Educational urgency note; not diagnosis |
+| Articles | `/articles/:slug` | Author + medical reviewer + reviewedAt |
+| Offers | `/offers/:slug` | Terms + MOHAP note; no bait claims |
+| Membership Plans | `/membership/:slug` | Single / Family / Corporate pattern |
+| Clinicians | `/clinicians/:slug` | DHA title + licence placeholder |
+| Topic Hubs | `/learn/:slug` | Groups the content graph |
+| Locations | contact cards / optional CMS | Dubai areas |
 
-### Cases
-Fields: `title`, `slug`, `treatment` (ref), `summary`, `heroImage`, `gallery`, `consentOnFile` (boolean), `disclaimer` (text), `body`  
-*Default seed items keep `consentOnFile` false and show placeholder art — buyers only publish real cases with consent.*
-
-### Blog Posts
-Fields: `title`, `slug`, `category`, `excerpt`, `cover`, `readMinutes`, `body`, `publishedAt`
-
-### Locations
-Fields: `title`, `slug`, `address`, `area` (e.g. Jumeirah), `phone`, `email`, `hours`, `mapLink`, `image`
-
-### Team
-Fields: `name`, `dhaTitle`, `bio`, `photo`, `order`
+Detail pages share: medical review strip, related graph, consultation CTA, outcomes/licence footers.
 
 ## Forms & interactions
 

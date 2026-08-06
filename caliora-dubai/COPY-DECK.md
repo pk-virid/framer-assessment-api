@@ -8,9 +8,11 @@ Tone: calm, clinical, transparent, premium — never hype.
 
 ## Global chrome
 
-**Nav:** Home · About · Treatments · Conditions · Cases · Blog · Locations · Contact  
+**Nav:** Home · About · Treatments · Conditions · Symptoms · Membership · Offers · Contact Us  
+**Footer / secondary:** Articles · Clinicians · Learn · Privacy · Terms · Instructions  
 **Primary CTA:** Book a consultation  
 **Secondary CTA:** View treatments  
+**Content model reference:** [Sensate Dental OS](https://sensatedentalos.framer.website/) — see `SITE-IA.md` 
 
 **Footer disclaimer (required):**  
 Caliora Dental Clinic is a placeholder brand for this Framer template. Replace with your DHA-licensed facility details before publishing. Marketing content must be approved by your Medical Director and display a valid MOHAP advertisement licence number where required.  

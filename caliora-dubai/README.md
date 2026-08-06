@@ -1,6 +1,9 @@
 # Caliora Dubai — Framer Dentist Template (AED 15,000 tier)
 
-Framer-native remake of [Caliora](https://caliora-dentist-template.webflow.io/) for **Dubai dental clinics** — **DHA / MOHAP-safe copy**, private-clinic craft, and a **premium subtle motion system** priced to support **AED 15,000** template sales.
+Framer-native Dubai dental clinic OS — IA from [Sensate Dental OS](https://sensatedentalos.framer.website/), craft/motion bar from Caliora, **DHA / MOHAP-safe copy**, priced for **AED 15,000**.
+
+**Primary nav:** Home · About · Treatments · Conditions · Symptoms · Membership · Offers · Contact Us  
+**Full IA:** [`SITE-IA.md`](./SITE-IA.md)
 
 ## Status
 
