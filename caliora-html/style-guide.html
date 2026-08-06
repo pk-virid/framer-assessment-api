@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Style guide — Caliora Dental Clinic Template</title>
+  <meta name="description" content="Design system of the Caliora template." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="index.html">
+      <span class="nav__logo">Caliora</span>
+      <span class="nav__slogan">Dental Clinic · Dubai</span>
+    </a>
+    <ul class="nav__links">
+      <li class="nav__item">
+        <a class="nav__link" href="#">Pages <span class="nav__caret">▾</span></a>
+        <div class="dropdown dropdown--wide">
+          <a href="index.html"><b>Home</b><span>Main landing page</span></a>
+          <a href="about.html"><b>About</b><span>Story, values &amp; team</span></a>
+          <a href="conditions.html"><b>Conditions</b><span>What we treat</span></a>
+          <a href="treatments.html"><b>Treatments</b><span>All services</span></a>
+          <a href="cases.html"><b>Cases</b><span>Treatment journeys</span></a>
+          <a href="equipment.html"><b>Equipment</b><span>Clinic technology</span></a>
+          <a href="blog.html"><b>Blog</b><span>Educational articles</span></a>
+          <a href="gallery.html"><b>Gallery</b><span>Inside the clinic</span></a>
+          <a href="locations.html"><b>Locations</b><span>Two Dubai clinics</span></a>
+          <a href="contact.html"><b>Contact</b><span>Book a consultation</span></a>
+        </div>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="conditions.html">Conditions <span class="nav__caret">▾</span></a>
+        <div class="dropdown">
+          <a href="condition-detail.html"><b>Cosmetic Dentistry</b><span>Veneers, whitening &amp; smile design</span></a>
+          <a href="condition-detail.html"><b>Restorative Dentistry</b><span>Repair and protect natural teeth</span></a>
+          <a href="condition-detail.html"><b>Implantology</b><span>Replace missing teeth</span></a>
+          <a href="condition-detail.html"><b>Orthodontics</b><span>Discreet alignment options</span></a>
+        </div>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="treatments.html">Treatments <span class="nav__caret">▾</span></a>
+        <div class="dropdown dropdown--wide">
+          <a href="treatment-detail.html"><b>Emergency Dental Care</b></a>
+          <a href="treatment-detail.html"><b>General Dentistry &amp; Prevention</b></a>
+          <a href="treatment-detail.html"><b>Veneers &amp; Smile Design</b></a>
+          <a href="treatment-detail.html"><b>Teeth Whitening</b></a>
+          <a href="treatment-detail.html"><b>Crowns &amp; Bridges</b></a>
+          <a href="treatment-detail.html"><b>Ceramic &amp; Lingual Braces</b></a>
+          <a href="treatment-detail.html"><b>Orthodontics &amp; Invisalign</b></a>
+          <a href="treatment-detail.html"><b>Dental Implants</b></a>
+        </div>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="locations.html">Locations <span class="nav__caret">▾</span></a>
+        <div class="dropdown">
+          <a href="location-detail.html"><b>Jumeirah</b><span>Al Wasl Road, Dubai</span></a>
+          <a href="location-detail.html"><b>Downtown Dubai</b><span>Boulevard Plaza</span></a>
+        </div>
+      </li>
+    </ul>
+    <a class="btn" href="contact.html">Book a consultation</a>
+    <button class="nav__burger" aria-label="Menu"><i></i><i></i><i></i></button>
+  </div>
+</nav>
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow" data-reveal>Style guide</span>
+    <h1 class="display" data-reveal-mask><span style="display:block">Design system</span></h1>
+    <p class="body-lg" data-reveal>Tokens, type and components used across the template.</p>
+  </div>
+</header>
+
+<section class="section theme-light-strong section--tight">
+  <div class="container" data-stagger>
+    <span class="eyebrow">Typography</span>
+    <p class="display">Display — Geist</p>
+    <p class="h1">Heading 1 — Geist</p>
+    <p class="h2">Heading 2 — Geist</p>
+    <p class="h3">Heading 3 — Geist</p>
+    <p class="body-lg" style="max-width:640px">Body — Geist. Used for paragraphs and long-form content across the template.</p>
+    <p class="small" style="color:var(--muted)">Small — captions and metadata.</p>
+    <p class="eyebrow">Eyebrow — labels</p>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="container">
+    <span class="eyebrow" style="display:block;margin-bottom:20px">Color tokens</span>
+    <div class="grid" style="grid-template-columns:repeat(5,1fr)" data-stagger>
+      <div style="background:var(--bg);border:1px solid var(--line);border-radius:14px;height:120px;display:flex;align-items:flex-end;padding:12px"><span class="small">Background</span></div>
+      <div style="background:var(--surface);border:1px solid var(--line);border-radius:14px;height:120px;display:flex;align-items:flex-end;padding:12px"><span class="small">Surface</span></div>
+      <div style="background:var(--brand);border-radius:14px;height:120px;display:flex;align-items:flex-end;padding:12px"><span class="small" style="color:var(--cream)">Brand</span></div>
+      <div style="background:var(--gold);border-radius:14px;height:120px;display:flex;align-items:flex-end;padding:12px"><span class="small" style="color:var(--cream)">Accent Gold</span></div>
+      <div style="background:var(--deep);border-radius:14px;height:120px;display:flex;align-items:flex-end;padding:12px"><span class="small" style="color:var(--cream)">Deep</span></div>
+    </div>
+    <span class="eyebrow" style="display:block;margin:50px 0 20px">Buttons</span>
+    <div style="display:flex;gap:16px;flex-wrap:wrap">
+      <a class="btn" href="#">Primary button</a>
+      <a class="btn btn--outline" href="#">Secondary button</a>
+      <a class="large-link" href="#">Large link <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__logo">Caliora</div>
+        <p class="footer__tag">Dentist &amp; dental clinic template for Dubai practices. Replace with your clinic details.</p>
+        <a class="btn" href="contact.html" style="display:inline-flex">Schedule your visit</a>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="conditions.html">Conditions</a>
+        <a href="treatments.html">Treatments</a><a href="cases.html">Cases</a><a href="equipment.html">Equipment</a>
+      </div>
+      <div>
+        <h5>More</h5>
+        <a href="blog.html">Blog</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+        <a href="locations.html">Locations</a><a href="style-guide.html">Style guide</a>
+        <a href="instructions.html">Instructions</a><a href="licenses.html">Licences</a>
+      </div>
+      <div>
+        <h5>Visit us</h5>
+        <a href="location-detail.html">Jumeirah — Al Wasl Road, Dubai</a>
+        <a href="location-detail.html">Downtown — Boulevard Plaza, Dubai</a>
+        <a href="tel:+97140000000">+971 4 000 0000</a>
+        <a href="mailto:hello@yourclinic.ae">hello@yourclinic.ae</a>
+      </div>
+    </div>
+    <div class="footer__licence">
+      <span>MOHAP Licence No. XX-0000000 · DHA Facility Licence No. 0000000 — replace with your licence numbers before publishing.</span>
+      <span>© <span data-year></span> Your Clinic Name</span>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track"><span>Caliora — Dental Clinic Dubai —&nbsp;</span></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
