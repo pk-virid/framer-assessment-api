@@ -20,9 +20,10 @@ Read generated skill files:
 
 Via `framer.agent.applyChanges` / styles:
 
-1. Color styles: bg, ink, muted, brand, brand-2, surface, line  
-2. Text styles: Display / H1–H3 / Body / Small / Button  
-3. Create base components: Button, SectionHeading, LicenceStrip, DisclaimerBar  
+1. Color styles: bg, bg-deep, ink, muted, brand, brand-soft, brand-2, surface, line  
+2. Text styles: Display / H1–H3 / Body / Small / Button — premium serif + grotesque pairing  
+3. Create base components: Button (4 variants), SectionHeading, LicenceStrip, DisclaimerBar, Nav (scroll variants)  
+4. Implement motion tokens from `PREMIUM-MOTION.md` before page bulk build  
 
 ## 2) CMS seed (DHA-safe)
 
@@ -36,10 +37,15 @@ For large design recreation, use Framer’s design subagent (see skill `start-co
 ```js
 state.agent ??= {};
 const first = await framer.agent.startConversation(
-  `Recreate a premium Framer-native dental clinic template inspired by https://caliora-dentist-template.webflow.io/ for Dubai dentists.
-STRICT: Follow DHA-compliant copy from the attached brief. No guaranteed outcomes, no best-in-Dubai claims, no fake case counts.
-Include MOHAP/DHA licence slots in footer. Locations in Dubai (Jumeirah + Business Bay placeholders).
-Build Home first as one hero composition (brand-forward), then shared Nav/Footer components.`,
+  `Build an AED 15,000-tier Framer-native dental clinic template inspired by https://caliora-dentist-template.webflow.io/ for Dubai dentists.
+
+QUALITY BAR: Private-clinic luxury. Quiet, expensive motion — not a free template.
+MOTION (mandatory): hero brand→masked headline→support→CTA choreography; scroll reveals with 60–90ms stagger; image scale-settle + subtle parallax; nav scroll-compact + underline draw; button hover arrow nudge; page transitions; FAQ accordion height; honor prefers-reduced-motion. Easing cubic-bezier(0.16,1,0.3,1). No purple glow, no bounce spam, no fake counters.
+
+STRICT DHA COPY: No guaranteed outcomes, no best-in-Dubai claims, no fake case counts. MOHAP/DHA licence slots in footer. Dubai locations (Jumeirah + Business Bay placeholders).
+
+LAYOUT: Home first viewport = one composition — brand-forward, full-bleed hero, one headline, one support, one CTA group. No hero cards/stats/badges.
+Then shared Nav/Footer components with polish.`,
   {
     pagePath: "/",
     imageUrls: [
@@ -50,7 +56,7 @@ Build Home first as one hero composition (brand-forward), then shared Nav/Footer
 state.agent.conversationId = first.conversationId;
 ```
 
-Continue conversation to add About, Treatments index + detail wiring, Contact, Blog, legal pages.
+Continue conversation to add About, Treatments index + detail wiring, Contact, Blog, legal pages — **restate motion bar every turn** so quality does not regress.
 
 Timeouts: 10 minutes per conversation turn.
 

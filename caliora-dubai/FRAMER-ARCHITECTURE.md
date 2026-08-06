@@ -1,24 +1,28 @@
-# Framer-native architecture (sellable template)
+# Framer-native architecture (AED 15,000 sellable template)
 
 Rebuild Caliora as **native Framer** — no Webflow embed, no exported HTML shell. Buyers edit on canvas + CMS.
+
+**Commercial bar:** AED 15,000. Craft and motion must read as private-clinic luxury. Full motion system: [`PREMIUM-MOTION.md`](./PREMIUM-MOTION.md).
 
 ## Design tokens
 
 | Token | Value (starter) | Notes |
 |-------|-----------------|-------|
-| `--bg` | `#F7F4EF` warm stone | Avoid purple/cream AI clichés; refined clinic light |
-| `--ink` | `#14201C` deep pine | |
-| `--muted` | `#5C6B64` | |
-| `--brand` | `#0F6B5C` dubai teal | Primary actions |
-| `--brand-2` | `#C4A574` soft sand gold | Accents only |
-| `--surface` | `#FFFFFF` | |
-| `--line` | `#D9E0DC` | |
-| Display font | Fraunces or similar serif via Framer fonts | Expressive, not Inter |
-| Body font | Geist or DM Sans | |
+| `--bg` | `#F3EEE6` limestone | Warm, gallery-like; not generic cream cliché |
+| `--bg-deep` | `#0E1714` | Dark bands / home-dark optional page |
+| `--ink` | `#101A17` deep pine | |
+| `--muted` | `#5E6D66` | |
+| `--brand` | `#0B5F52` dubai teal | Primary actions |
+| `--brand-soft` | `#DCEDEA` | Soft fills, hover washes |
+| `--brand-2` | `#B8956C` sand gold | Hairlines, numerals, rare ornament |
+| `--surface` | `#FFFAF5` | |
+| `--line` | `#D5DDD8` | |
+| Display font | Fraunces (or equivalent serif) | Large, calm, high contrast |
+| Body font | Neue Haas / DM Sans / similar grotesque | Not Inter as the brand voice |
 
-Breakpoints: Desktop 1200 · Tablet 810 · Phone 390 (Framer defaults ok).
+Breakpoints: Desktop 1440 artboard · 1200 content · Tablet 810 · Phone 390.
 
-Motion (2–3 intentional): hero fade/rise, section reveal on scroll, nav/CTA hover — subtle, clinical, not glow-heavy.
+Spacing scale: 8 / 16 / 24 / 40 / 64 / 96 / 128 / 160 — section padding desktop **128–160px**.
 
 ## Pages
 
@@ -47,18 +51,35 @@ Motion (2–3 intentional): hero fade/rise, section reveal on scroll, nav/CTA ho
 
 ## Shared layout components
 
-- `Nav` — logo, links, Book consultation; mobile sheet
+- `Nav` — logo, links, Book consultation; scroll-compact + mobile clip sheet
 - `Footer` — nav, locations, MOHAP + DHA licence slots, disclaimer
-- `Button` / `TextLink` — primary, secondary, ghost
-- `SectionHeading` — eyebrow + title + support
-- `TreatmentCard`, `ConditionCard`, `PostCard`, `LocationCard`
-- `StatRow` — editable stats (no fake defaults locked in)
-- `FeatureList` — numbered 1–4
+- `Button` / `TextLink` — variants Default/Hover/Pressed/Focus; arrow micro-motion
+- `MagneticButton` *(optional code)* — ≤8px desktop magnetism for hero/closing CTA
+- `MaskedHeadline` *(optional code)* — line-mask reveal for heroes
+- `SectionHeading` — eyebrow + title + support with appear cascade
+- `TreatmentRow` — editorial image/type swap (not cheap card grid)
+- `ConditionCard`, `PostCard`, `LocationCard` — interaction cards only where lists need them
+- `StatRow` — editable stats (defaults empty / tasteful placeholders; count-up off by default)
+- `FeatureList` — numbered 1–4 with rule draw-in
 - `Testimonial` — experience-only + consent note
 - `DisclaimerBar` — outcomes vary
 - `LicenceStrip` — MOHAP / DHA numbers
-- `ContactForm` — Framer Form with compliant microcopy
-- `CTABand` — closing consultation CTA
+- `ContactForm` — Framer Form with compliant microcopy + refined focus
+- `CTABand` — closing consultation CTA with premium hover
+- `PageShell` — layout template for shared Nav/Footer + page effects
+
+## Motion package (non-negotiable for price)
+
+See `PREMIUM-MOTION.md`. Minimum ship set:
+
+1. Hero load choreography (brand → masked title → support → CTAs)
+2. Sitewide scroll reveals with stagger
+3. Image scale-settle + subtle parallax
+4. Nav scroll-compact + link underline draw
+5. Button variant polish
+6. Page transitions via Page Effects
+7. FAQ height animation
+8. `prefers-reduced-motion` fallbacks
 
 ## CMS collections
 

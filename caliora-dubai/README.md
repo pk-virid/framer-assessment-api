@@ -1,6 +1,6 @@
-# Caliora Dubai — Framer Dentist Template (DHA-ready)
+# Caliora Dubai — Framer Dentist Template (AED 15,000 tier)
 
-Framer-native remake of [Caliora](https://caliora-dentist-template.webflow.io/) positioned for **Dubai dental clinics**, with copy rewritten for **DHA / MOHAP medical advertising standards**.
+Framer-native remake of [Caliora](https://caliora-dentist-template.webflow.io/) for **Dubai dental clinics** — **DHA / MOHAP-safe copy**, private-clinic craft, and a **premium subtle motion system** priced to support **AED 15,000** template sales.
 
 ## Status
 
@@ -8,8 +8,9 @@ Framer-native remake of [Caliora](https://caliora-dentist-template.webflow.io/) 
 |------|--------|
 | `@framer/agent` skills installed | Done |
 | Framer project connected | **Blocked** — needs project URL + browser auth or API key |
-| DHA copy deck | Ready in this folder |
-| Framer IA / CMS plan | Ready in this folder |
+| DHA copy deck | Ready |
+| Framer IA / CMS plan | Ready |
+| Premium motion spec | Ready — `PREMIUM-MOTION.md` |
 | Canvas build + publish | Waiting on connection |
 
 ## Why Framer External Agent (not a custom MCP)
@@ -48,4 +49,5 @@ npx @framer/agent@latest session new "<projectUrlOrId>"
 - `DHA-COMPLIANCE.md` — advertising rules baked into every section
 - `COPY-DECK.md` — full section copy (EN) for Dubai dentists
 - `FRAMER-ARCHITECTURE.md` — pages, CMS, components, tokens
+- `PREMIUM-MOTION.md` — AED 15k motion + craft system (mandatory)
 - `BUILD-PLAYBOOK.md` — exact Framer agent execution order after auth

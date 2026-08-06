@@ -17,9 +17,11 @@ description: >
 
 ## Build principles
 
+- **AED 15,000 quality bar**: private-clinic luxury; quiet expensive motion; reject anything that feels like a free starter.
 - **Framer-native only**: Stacks, Components, CMS, Forms, Styles. No Webflow HTML export shells.
 - **Sellable template**: include Home, Treatments (+CMS), Conditions (+CMS), Blog (+CMS), Locations (Dubai), Contact, About, Cases, Privacy, Terms, Instructions, Style Guide.
 - **Brand-forward hero**: first viewport = brand + one headline + one support line + CTA group + one dominant full-bleed visual. No stat strips or card grids in the hero.
+- **Motion**: follow `caliora-dubai/PREMIUM-MOTION.md` — hero choreography, masked headlines, scroll reveals, image settle/parallax, nav compact, button variants, page transitions, reduced-motion fallbacks. No purple glow / bounce spam.
 - **Dubai localisation**: `+971` phones, Dubai areas, MOHAP/DHA licence slots — not US cities from Caliora source.
 
 ## DHA copy guardrails (non-negotiable)
