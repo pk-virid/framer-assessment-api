@@ -1,0 +1,10 @@
+{
+  "name": "framer-template-reviewer",
+  "version": "1.0.0",
+  "description": "Marketplace QA agent that audits published Framer templates across six weighted categories before submission.",
+  "author": {
+    "name": "Template Studio"
+  },
+  "license": "MIT",
+  "keywords": ["framer", "marketplace", "qa", "template", "audit"]
+}

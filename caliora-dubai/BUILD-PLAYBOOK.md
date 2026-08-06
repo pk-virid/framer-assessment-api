@@ -80,15 +80,20 @@ Timeouts: 10 minutes per conversation turn.
 - Alt text, heading order, tap targets  
 - Page effects only if they don’t harm readability  
 
-## 7) Marketplace QA
+## 7) Marketplace QA (mandatory — target 100)
 
-Run mental checklist in `FRAMER-ARCHITECTURE.md`. Optionally hit assessment API:
+1. Walk `../template-studio/reviewer/PRE-SHIP-CHECKLIST.md`  
+2. Publish preview  
+3. Run **Framer Template Reviewer** agent/skill on the URL, or:
 
 ```bash
 curl -s -X POST https://<assessment-host>/api/assess \
   -H 'content-type: application/json' \
-  -d '{"templateUrl":"https://<published-framer-site>"}'
+  -d '{"templateUrl":"https://<published-framer-site>","strictStudioGate":true}'
 ```
+
+4. Fix every CRITICAL and WARNING; republish; re-run until `studioShipReady: true`  
+5. Do **not** Marketplace-submit while Template Requirements < 100
 
 ## 8) Publish (only if user asks)
 

@@ -11,7 +11,10 @@ Stack: `@framer/agent` + premium motion bar + niche compliance copy.
 4. Niche-safe copy (for UAE health: DHA/MOHAP rules)  
 5. Desktop + phone pass, working links, no lorem  
 6. Published preview URL + buyer instructions  
-7. Optional: run assessment API against published URL  
+7. **Framer Template Reviewer gate (mandatory):** `studioShipReady: true`  
+   - overall ≥ 95, Template Requirements = 100, zero CRITICAL  
+   - Agent: `framer-template-reviewer` · checklist: `reviewer/PRE-SHIP-CHECKLIST.md` · API: `POST /api/assess`  
+   - Loop: fix → republish → re-audit until pass (do not submit cold)
 
 ## Weekly rhythm
 
@@ -21,8 +24,9 @@ Stack: `@framer/agent` + premium motion bar + niche compliance copy.
 | **Brief** | Copy deck + IA + motion notes (clone prior pack, rewrite niche) |
 | **Connect** | Blank Framer project in team workspace + API key/session |
 | **Build** | Design system → CMS seed → Home (motion bar) → remaining pages |
-| **Polish** | Responsive, a11y, compliance pass, marketplace QA |
-| **Ship** | Preview link, Instructions page, archive brief for next week |
+| **Polish** | Responsive, a11y, compliance pass |
+| **Review** | Run Framer Template Reviewer on published URL; clear CRITICAL/WARNING |
+| **Ship** | Preview + remix links only after `studioShipReady`; archive brief for next week |
 
 ## Reuse from Caliora Dubai (week 1)
 

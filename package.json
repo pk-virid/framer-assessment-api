@@ -1,8 +1,11 @@
 {
   "name": "framer-assessment-api",
-  "version": "1.0.0",
-  "description": "Assessment API for Framer templates",
+  "version": "1.1.0",
+  "description": "Framer Template Reviewer API — six-category marketplace readiness audits",
   "main": "api/assess.js",
+  "scripts": {
+    "test:crawl": "node -e \"require('./api/lib/crawl').crawlTemplate(process.argv[1]).then(r=>console.log({isFramer:r.isFramer,pages:r.pages.length,finalUrl:r.finalUrl})).catch(e=>{console.error(e);process.exit(1)})\""
+  },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.24.0"
   }
