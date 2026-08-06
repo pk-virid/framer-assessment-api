@@ -13,7 +13,7 @@ HEAD = """<!DOCTYPE html>
   <meta name="description" content="{desc}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
@@ -569,11 +569,11 @@ PAGES["style-guide.html"] = dict(
 <section class="section theme-light-strong section--tight">
   <div class="container" data-stagger>
     <span class="eyebrow">Typography</span>
-    <p class="display">Display — Fraunces</p>
-    <p class="h1">Heading 1 — Fraunces</p>
-    <p class="h2">Heading 2 — Fraunces</p>
-    <p class="h3">Heading 3 — Fraunces</p>
-    <p class="body-lg" style="max-width:640px">Body — Instrument Sans. Used for paragraphs and long-form content across the template.</p>
+    <p class="display">Display — Geist</p>
+    <p class="h1">Heading 1 — Geist</p>
+    <p class="h2">Heading 2 — Geist</p>
+    <p class="h3">Heading 3 — Geist</p>
+    <p class="body-lg" style="max-width:640px">Body — Geist. Used for paragraphs and long-form content across the template.</p>
     <p class="small" style="color:var(--muted)">Small — captions and metadata.</p>
     <p class="eyebrow">Eyebrow — labels</p>
   </div>
@@ -625,7 +625,7 @@ PAGES["licenses.html"] = dict(
 <section class="section section--tight" style="padding-top:0">
   <div class="container"><article class="prose" data-reveal>
     <p>Placeholder photography is hot-linked from Unsplash under the Unsplash License; replace with your own clinic photography before launch for best results.</p>
-    <p>Fonts: Fraunces and Instrument Sans, both available under the SIL Open Font License via Google Fonts. Animations use GSAP via CDN under its standard license.</p>
+    <p>Fonts: Geist and Geist Mono, both available under the SIL Open Font License via Google Fonts. Animations use GSAP via CDN under its standard license.</p>
     <p>All copy in this template is original and written for DHA/MOHAP advertising compliance. Update licence numbers, clinic details and any statistics with your own verified information.</p>
   </article></div>
 </section>
